@@ -1,0 +1,19 @@
+class Pertanyaan:
+    def __init__(self, pertanyaan, opsi, jawaban):
+        self.pertanyaan = pertanyaan
+        self.opsi = opsi
+        self.jawaban = jawaban
+
+    def cetakpertanyaan(self):
+        print(self.pertanyaan)
+
+    def tampilkanopsi(self):
+        b = 0
+        for a in self.opsi:
+            print(str(b)+'. '+a)
+            b += 1
+        pilihan = int(input("Jawab: "))
+        if self.opsi[pilihan] == self.jawaban:
+            return True
+        else:
+            return False
