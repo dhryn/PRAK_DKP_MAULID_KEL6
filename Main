@@ -1,0 +1,29 @@
+from Method import Pertanyaan
+
+soal = [Pertanyaan('Siapa pencipta Python: ',
+                  ['Guido van Rossum', 'James Gosling', 'Dennis Ritchie', 'Bjarne Stroustrup'],
+                  'Guido van Rossum'),
+        Pertanyaan('Tahun berapa Python dibuat: ',
+                  ['1989', '1991', '2000', '2016'],
+                  '1991'),
+        Pertanyaan('Java diciptakan oleh: ',
+                  ['Guido van Rossum', 'James Gosling', 'Dennis Ritchie', 'Bjarne Stroustrup'],
+                  'James Gosling'),
+        Pertanyaan('Java diciptakan pada tahun: ',
+                  ['1998', '1986', '1987', '1990'],
+                  '1990')
+        ]
+
+skor = 0
+for i in soal:
+    i.cetakpertanyaan()
+    benar = i.tampilkanopsi()
+    if benar:
+        skor +=1
+        print('')
+    else:
+        print('Coba lagi')
+        print('')
+
+skorakhir = int((skor/len(soal))*100)
+print('skor anda '+str(skorakhir)+'%')
