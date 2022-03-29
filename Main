@@ -26,3 +26,4 @@ for i in soal:
 
 skorakhir = int((skor/len(soal))*100)
 print('skor anda '+str(skorakhir)+'%')
+ 
