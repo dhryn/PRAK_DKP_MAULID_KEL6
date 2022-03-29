@@ -13,7 +13,6 @@ soal = [Pertanyaan('Siapa pencipta Python: ',
                   ['1998', '1986', '1987', '1990'],
                   '1990')
         ]
-
 skor = 0
 for i in soal:
     i.cetakpertanyaan()
